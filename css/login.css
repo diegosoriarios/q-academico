@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Roboto Condensed, Helvetica Neue, sans-serif;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+}
+
+h1{
+  font-size: 2em;
+  color: white;
+}
+
+#titulo{
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  line-height: 3em;
+  background: linear-gradient(250deg, #085078 10%, #85d8ce 90%);
+  border-radius: 10px 10px 0 0;
+}
+
+.quickFlip{
+  width: 30%;
+  height: 60vh;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.quickFlip input{
+  margin-right: 2%;
+}
+
+#box{
+  margin-left: 30%;
+  text-align: left;
+  width: 70%;
+}
+
+.blackPanel{
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  color: #198ada;
+}
+
+.redPanel{
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 10px;
+}
+
+.redPanel form{
+  margin-left: 20%;
+  margin-top: 25%;
+}
+
+.redPanel form i{
+  margin-right: 2%;
+}
+
+.redPanel form a{
+  text-decoration: none;
+  margin-left: 20%;
+  display: block;
+  width: 100px;
+  height: 50px;
+  border: 3px solid #198ada;
+  border-radius: 10px;
+  line-height: 45px;
+  font-weight: bold;
+  text-align: center;
+  color: #198ada;
+}
+
+
+#sel{
+  text-decoration: none;
+  color: black;
+  line-height: 32px;
+}
+
+#sel i{
+  margin-right: 2%;
+}
+
+#sel:hover{
+  color: #085078;
+}
+
+.blackPanel #volta{
+  margin-left: 15%;
+  display: block;
+  width: 100px;
+  height: 50px;
+  border: 3px solid #198ada;
+  border-radius: 10px;
+  line-height: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#volta{
+  margin-left: 20%;
+  margin-top: 1%;
+  display: block;
+  width: 100px;
+  height: 50px;
+  border: 3px solid #198ada;
+  border-radius: 10px;
+  line-height: 45px;
+  font-weight: bold;
+  text-align: center;
+  color: #198ada;
+  text-decoration: none;
+}
+
+#in{
+  font-size: 2em;
+}
+
+.redPanel input{
+  border: none;
+  border-bottom: 2px solid #198ada;
+  background-color: transparent;
+  color: #198ada;;
+}
+
+.redPanel input:focus{
+  color: #124268;
+  font-weight: bold;
+}
+
+.redPanel i{
+  color: #198ada;
+}
+
+@media (min-width:1201px) {
+
+}
+
+@media (max-width: 1200px) and (min-width:901px) {
+
+}
+
+@media (max-width: 900px) and (min-width:601px) {
+  .quickFlip{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 25%;
+  }
+  #box{
+    margin-top: 7%;
+    margin-left: 25%;
+    text-align: left;
+    width: 70%;
+
+  }
+  #box #volta, #volta, .redPanel form a{
+    display: block;
+    width: 50px;
+    height: 25px;
+    border: 1px solid #198ada;
+    border-radius: 5px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #198ada;
+    text-decoration: none;
+  }
+
+  .redPanel #volta, .redPanel form a{
+    font-size: 0.7em;
+  }
+
+  .redPanel form{
+    margin-top: 20%;
+  }
+
+  #in{
+    font-size: 0.7em;
+  }
+
+  .redPanel input{
+    width: 70%;
+    font-size: 1em;
+    border-bottom: 1px solid #198ada;
+  }
+
+  .redPanel input:focus{
+    font-size: 1em;
+  }
+
+  .redPanel i{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  #titulo{
+      font-size: 1.5em;
+      line-height: 64px;
+  }
+  .quickFlip{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 25%;
+  }
+  #sel{
+    line-height: 18px;
+    font-size: 1em;
+  }
+  #box{
+    margin-top: 7%;
+    margin-left: 25%;
+    text-align: left;
+    width: 70%;
+  }
+  #box #volta, #volta, .redPanel form a{
+    display: block;
+    width: 50px;
+    height: 25px;
+    border: 1px solid #198ada;
+    border-radius: 5px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #198ada;
+    text-decoration: none;
+  }
+
+  #sel{
+    -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+    transform: scale(0.7);
+  }
+
+  .redPanel #volta, .redPanel form a{
+    font-size: 0.7em;
+  }
+
+  .redPanel form{
+    margin-top: 20%;
+  }
+
+  #in{
+    font-size: 0.7em;
+  }
+
+  .redPanel input{
+    width: 70%;
+    font-size: 1em;
+    border-bottom: 1px solid #198ada;
+  }
+
+  .redPanel input:focus{
+    font-size: 1em;
+  }
+
+  .redPanel i{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+    #titulo{
+        font-size: 1em;
+        line-height: 64px;
+    }
+    .quickFlip{
+      width: 50%;
+      height: 50vh;
+      margin: 0 auto;
+      margin-top: 25%;
+    }
+    #sel{
+      line-height: 18px;
+    }
+    #box{
+      margin-top: 7%;
+      margin-left: 25%;
+      text-align: left;
+      width: 70%;
+      font-size: 0.5em;
+    }
+    #box #volta, #volta, .redPanel form a{
+      display: block;
+      width: 50px;
+      height: 25px;
+      border: 1px solid #198ada;
+      border-radius: 5px;
+      line-height: 25px;
+      font-weight: bold;
+      text-align: center;
+      color: #198ada;
+      text-decoration: none;
+    }
+
+    #sel{
+      -ms-transform: scale(0.7); /* IE 9 */
+      -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+      transform: scale(0.7);
+    }
+
+    .redPanel #volta, .redPanel form a{
+      font-size: 0.7em;
+    }
+
+    .redPanel form{
+      margin-top: 40%;
+    }
+
+    #in{
+      font-size: 1em;
+    }
+
+    .redPanel input{
+      width: 70%;
+      font-size: 0.7em;
+      border-bottom: 1px solid #198ada;
+    }
+
+    .redPanel input:focus{
+      font-size: 0.7em;
+    }
+
+    .redPanel i{
+      font-size: 0.7em;
+    }
+}

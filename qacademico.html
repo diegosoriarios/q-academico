@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Q-Academico</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="celmenu">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div id="close">
+			<i class="fas fa-times-circle"></i>
+		</div>
+		<div class="container">
+	  <div class="overlay"></div>
+	  <div class="container-header">
+	    <div class="container-header-items">
+	      <div class="container-items">
+					<a href="qacademico.html">
+						<div class="logo">
+							<div class="box-icon-logo">
+							</div>
+		        </div>
+					</a>
+	        <div class="btn-close">
+	          <div class="icon-item"></div>
+	          <div class="icon-item"></div>
+	          <div class="icon-item"></div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="fas fa-clipboard-list icon"></i>
+	            <div class="menu-text">
+	              Questionários
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-edit icon"></i>
+	            <div class="menu-text">
+	              Pedidos de Matriculas
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-clock icon"></i>
+	            <div class="menu-text">
+	              Horário Individual
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-calendar-alt icon"></i>
+	            <div class="menu-text">
+	              Calendário Academico
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="fas fa-book-open icon"></i>
+	            <div class="menu-text">
+	              Diários
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="fas fa-chalkboard-teacher icon"></i>
+	            <div class="menu-text">
+	              Boletins
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-question-circle icon"></i>
+	            <div class="menu-text">
+	            	Material Aula
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-user icon"></i>
+	            <div class="menu-text">
+	              Estágios
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-envelope icon"></i>
+	            <div class="menu-text">
+	            	Caixa de Mensagens
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-file-alt icon"></i>
+	            <div class="menu-text">
+	            	Histórico Escolar
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item item-footer">
+	          <div class="menu-item">
+	          	<i class="far fa-comment-alt icon"></i>
+	            <div class="menu-text">
+	            	Premiações
+	            </div>
+	          </div>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div id="conteudo">
+		<h2 id="nome">Olá Fulano</h2>
+		<div id="menu">
+			<img id="avat" src="img/avatar.jpg" alt="menu" />
+				<ul class="ul-menu">
+					<li><a href="#">Conta</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Curriculo</a></li>
+					<li><a href="#">Requerimentos</a></li>
+					<li><a href="#">Eventos</a></li>
+					<li><a href="index.html">Sair</a></li>
+				</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(function() {
+		$('#celmenu').click(function() {
+			$(".container-header").css("display", "block");
+			$("#celmenu").css("display", "none");
+			$("#close").css("display", "block");
+		});
+		$("#close").click(function(){
+			$("#celmenu").css("display", "block");
+			$("#close").css("display", "none");
+			$(".container-header").css("display", "none");
+		});
+	});
+	</script>
+	</body>
+</html>
