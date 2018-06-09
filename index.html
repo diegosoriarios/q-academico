@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="js/jquery.js"></script>
   <script src="js/jquery.quickflip.source.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/login.css">
   <script type="text/javascript">
     $(function() {
         $('.quickFlip').quickFlip();
@@ -17,6 +17,7 @@
             vertical : true
         });
         $('.quickFlip2').quickFlip();
+
       });
     </script>
     </head>
@@ -24,29 +25,42 @@
   <body>
       <div class="quickFlip">
           <div class="blackPanel">
-            <h1 id="titulo">Q-Academico</h1>
+            <h1 class="titulo">Q-Academico</h1>
             <div id="box">
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-user-alt"></i>Alunos</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-user-graduate"></i>Professor</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-graduation-cap"></i>Classificados</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-users"></i>Pais de Alunos</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-user-tie"></i>Empresas</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-user-tag"></i>Tecnicos Administrativos</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="fas fa-user-edit"></i>Egressos</a><br>
-              <a href="#" id="sel" class="quickFlipCta"><i class="far fa-file-alt"></i>Validar Documentos</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Alunos';">
+                <i class="fas fa-user-alt"></i>Alunos</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Professor';">
+                <i class="fas fa-user-graduate"></i>Professor</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Classificados';">
+                <i class="fas fa-graduation-cap"></i>Classificados</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Pais de Alunos';">
+                <i class="fas fa-users"></i>Pais de Alunos</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Empresas';">
+                <i class="fas fa-user-tie"></i>Empresas</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Tecnicos Administrativos';">
+                <i class="fas fa-user-tag"></i>Tecnicos Administrativos</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Egressos';">
+                <i class="fas fa-user-edit"></i>Egressos</a><br>
+              <a href="#" id="sel" class="quickFlipCta" onclick="document.getElementById('in').innerHTML='Validar Documentos';">
+                <i class="far fa-file-alt"></i>Validar Documentos</a><br>
             </div>
           </div>
 
           <div class="redPanel">
-              <p align="center" id="in"></p>
+              <p align="center" class="titulo" id="in"></p>
             <form>
               <i class="fas fa-user" id="icone"></i><input type="text" placeholder="Login"></input><br><br>
               <i class="fas fa-unlock-alt" id="icone"></i><input type="password" placeholder="Senha"></input><br><br>
-              <a href="qacademico.html">Entrar</a>
+              <a href="qacademico.html" id="volta">Entrar</a><br>
               <a href="#" id="volta" class="quickFlipCta">Voltar</a>
             </form>
           </div>
       </div>
       </div>
+      <footer id="foot">
+        <div>
+          <p>Copyright © 2018 - Todos os Direitos Reservados | Template por Diego Soria Rios</p>
+        </div>
+      </footer>
 </body>
 </html>

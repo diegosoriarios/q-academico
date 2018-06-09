@@ -12,18 +12,15 @@ body {
   background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
 }
 
-h1{
-  font-size: 2em;
-  color: white;
-}
-
-#titulo{
+.titulo{
   text-align: center;
   width: 100%;
   height: 30%;
   line-height: 3em;
   background: linear-gradient(250deg, #085078 10%, #85d8ce 90%);
   border-radius: 10px 10px 0 0;
+  font-size: 2em;
+  color: white;
 }
 
 .quickFlip{
@@ -55,8 +52,9 @@ h1{
 }
 
 .redPanel form{
-  margin-left: 20%;
-  margin-top: 25%;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 5%;
 }
 
 .redPanel form i{
@@ -92,30 +90,20 @@ h1{
   color: #085078;
 }
 
-.blackPanel #volta{
-  margin-left: 15%;
-  display: block;
-  width: 100px;
-  height: 50px;
-  border: 3px solid #198ada;
-  border-radius: 10px;
-  line-height: 45px;
-  font-weight: bold;
-  text-align: center;
-}
 
 #volta{
-  margin-left: 20%;
-  margin-top: 1%;
+  margin: 0 auto;
   display: block;
-  width: 100px;
+  width: 200px;
   height: 50px;
   border: 3px solid #198ada;
   border-radius: 10px;
   line-height: 45px;
   font-weight: bold;
   text-align: center;
-  color: #198ada;
+  background-color: #198ada;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -124,6 +112,8 @@ h1{
 }
 
 .redPanel input{
+  width: 85%;
+  height: 30px;
   border: none;
   border-bottom: 2px solid #198ada;
   background-color: transparent;
@@ -137,6 +127,17 @@ h1{
 
 .redPanel i{
   color: #198ada;
+}
+
+#foot{
+  position: absolute;
+  height: 5%;
+  width: 100%;
+  bottom: 0;
+  background-color: transparent;
+  border-top: 2px solid white;
+  text-align: center;
+  line-height: 2em;
 }
 
 @media (min-width:1201px) {
@@ -269,7 +270,7 @@ h1{
 }
 
 @media (max-width: 400px) {
-    #titulo{
+    .titulo{
         font-size: 1em;
         line-height: 64px;
     }
@@ -279,9 +280,6 @@ h1{
       margin: 0 auto;
       margin-top: 25%;
     }
-    #sel{
-      line-height: 18px;
-    }
     #box{
       margin-top: 7%;
       margin-left: 25%;
@@ -289,31 +287,21 @@ h1{
       width: 70%;
       font-size: 0.5em;
     }
-    #box #volta, #volta, .redPanel form a{
-      display: block;
-      width: 50px;
-      height: 25px;
-      border: 1px solid #198ada;
-      border-radius: 5px;
-      line-height: 25px;
-      font-weight: bold;
-      text-align: center;
-      color: #198ada;
-      text-decoration: none;
-    }
-
-    #sel{
-      -ms-transform: scale(0.7); /* IE 9 */
-      -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
-      transform: scale(0.7);
-    }
 
     .redPanel #volta, .redPanel form a{
       font-size: 0.7em;
     }
 
     .redPanel form{
-      margin-top: 40%;
+      margin-top: 1%;
+    }
+
+    #volta{
+      width: 75px;
+      height: 15px;
+      color: white;
+      line-height: 12px;
+      font-weight: normal;
     }
 
     #in{
@@ -321,7 +309,8 @@ h1{
     }
 
     .redPanel input{
-      width: 70%;
+      width: 80%;
+      height: 15px;
       font-size: 0.7em;
       border-bottom: 1px solid #198ada;
     }
@@ -332,5 +321,10 @@ h1{
 
     .redPanel i{
       font-size: 0.7em;
+    }
+
+    #foot{
+      font-size: 0.4em;
+      line-height: 18px;
     }
 }
