@@ -1,0 +1,16 @@
+{
+"name": "Q-Academico",
+"short_name": "QAcademico",
+"theme_color": "#2196f3",
+"background_color": "#2196f3",
+"display": "standalone",
+"scope": "/",
+"start_url": "/",
+"icons": [
+    {
+      "src": "images/logo.svg",
+      "sizes": "72x72",
+      "type": "image/svg"
+    }
+  ]
+}
