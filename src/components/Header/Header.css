@@ -1,0 +1,28 @@
+.right {
+    width: 30%;
+    height: 6%;
+    line-height: 45px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.center {
+    width: 40%;
+    height: 6%;
+    left: 30%;
+    line-height: 40px;
+    top: 0;
+    position: absolute;
+}
+
+.left {
+    width: 30%;
+    left: 70%;
+    height: 6%;
+    line-height: 40px;
+    top: 0;
+    position: absolute;
+}
